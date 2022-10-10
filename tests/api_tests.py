@@ -1,3 +1,5 @@
+import os
+
 from pytest_voluptuous import S
 from schemas.users import user, users, create_user
 from utils.sessions import session
@@ -34,9 +36,9 @@ def test_delete_user():
 
 
 def test_register_user():
-    email = "eve.holt@reqres.in"
-    password = "pistol"
-    user_credentials = {"email": email, "password": password}
+    EMAIL = os.getenv('email')
+    PASSWORD = os.getenv('password')
+    user_credentials = {"email": EMAIL, "password": PASSWORD}
     response = session().post("/register", json=user_credentials)
 
     assert response.status_code == 200
