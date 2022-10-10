@@ -1,5 +1,4 @@
 import os
-
 from pytest_voluptuous import S
 from schemas.users import user, users, create_user
 from utils.sessions import reqres

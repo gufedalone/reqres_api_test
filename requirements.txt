@@ -3,3 +3,5 @@ requests
 voluptuous
 pytest_voluptuous
 python-dotenv
+allure-pytest
+curlify
