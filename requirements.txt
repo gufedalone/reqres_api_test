@@ -1,3 +1,4 @@
 pytest
 requests
 voluptuous
+pytest_voluptuous
